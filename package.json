@@ -9,7 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "@gfxfundamentals/lesson-builder": "git://github.com/gfxfundamentals/lesson-builder.git#v1.7.1",
-    "@gfxfundamentals/live-editor": "git+https://github.com/gfxfundamentals/live-editor.git#v1.0.12",
+    "@gfxfundamentals/live-editor": "git+https://github.com/gfxfundamentals/live-editor.git#v1.0.15",
     "eslint-plugin-google-camelcase": "0.0.2",
     "eslint-plugin-html": "^6.1.0",
     "eslint-plugin-one-variable-per-var": "0.0.3",
@@ -38,6 +38,7 @@
     "start": "servez out",
     "eslint": "ld-check-dependencies && grunt eslint",
     "pre-push": "ld-check-dependencies && grunt eslint",
+    "pre-build": "grunt eslint",
     "bumpthree": "grunt bumpthree",
     "test": "check-all-the-errors --follow-links=both --output=threejsfundamentals.check.json out \"*.html\""
   },
